@@ -1,0 +1,10 @@
+<div class="posts list-group">
+  {{#each posts}}
+    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+      <!-- Display the post title -->
+      <span class="post-title">{{title}}</span>
+      <!-- Display the post creation date using the format_date helper -->
+      <span class="post-date">{{format_date createdAt}}</span>
+    </a>
+  {{/each}}
+</div>

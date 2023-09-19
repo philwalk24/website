@@ -1,0 +1,21 @@
+<div class="posts">
+  {{#each posts}}
+  <article class="card">
+    <!-- Card Header -->
+    <div class="card-header flex-row justify-space-between">
+      <!-- Post Title -->
+      <h2 class="post-title">
+        <a href="/post/{{id}}">{{title}}</a>
+      </h2>
+      <!-- Posted by User and Creation Date -->
+      <div class="post-meta">
+        Posted by {{User.username}} on {{format_date createdAt}}
+      </div>
+    </div>
+    <!-- Card Body -->
+    <div class="card-body">
+      {{body}}
+    </div>
+  </article>
+  {{/each}}
+</div>
