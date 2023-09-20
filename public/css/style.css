@@ -1,10 +1,10 @@
 :root {
-  --primary: #ccdad1;
-  --secondary: #9caea9;
-  --tertiary: #788585;
+  --primary: #4a90e2;      /* Updated primary color */
+  --secondary: #65c0a1;    /* Updated secondary color */
+  --tertiary: #f7a35c;     /* Updated tertiary color */
   --light-dark: #6f6866;
-  --dark: #38302e;
-  --border-radius: 0.3rem;
+  --dark: #38302e;         /* Updated dark color */
+  --border-radius: 0.5rem; /* Slightly increased border-radius */
 }
 
 * {
@@ -38,16 +38,16 @@ h2 a:visited {
 }
 
 h2 a {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 header {
-  margin-top: 50px;
+  margin-top: 40px; /* Slightly reduced margin-top */
 }
 
 main {
-  margin: 20px auto;
-  width: 94%;
+  margin: 10px auto; /* Reduced margin */
+  width: 96%; /* Slightly increased width */
 }
 
 a {
@@ -59,33 +59,32 @@ p {
 }
 
 input {
-    width: 100%;
-    border: 1px solid #ccc;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 10px; /* Increased bottom margin */
+  padding: 10px;
 }
 
 .card-header h2 {
-  color: var(--primary);
+  color: var(--secondary); /* Updated header color */
 }
 
 .btn {
-  font-size: 1.3rem;
+  font-size: 1.4rem; /* Slightly increased font size */
   text-decoration: none;
-  padding: 6px 5px;
+  padding: 8px 10px; /* Slightly increased padding */
   width: 100%;
   display: block;
-  margin: 5px 0;
+  margin: 10px 0; /* Increased margin */
   border-radius: var(--border-radius);
-  color: var(--primary);
+  color: #FFF; /* Updated text color to white */
   border: none;
   outline: none;
-  background-color: var(--light-dark);
+  background-color: var(--tertiary); /* Updated button background color */
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
 }
-
 .btn:hover {
   color: var(--primary);
   background-color: var(--tertiary);
